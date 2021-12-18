@@ -44,15 +44,15 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                97 Warren St. <br />
-                New York, NY 10007
+              <p className="mt-1 text-white">
+                Shivaji Nagar<br />
+                Ratnagiri, IN 415612 
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <div className="lg:w-1/2 px-6 mt-5 lg:mt-2">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
-              </h2>
+              </h2> 
               <p className="text-indigo-400 leading-relaxed">
                 tazimmadre5041@email.com
               </p>

@@ -1,35 +1,35 @@
 export const projects = [
   {
-    title: "React Reserve",
+    title: "Youtube Lite App",
+    subtitle: "React",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "/youtube.png",
+    link: "https://videos-gray-ten.vercel.app/",
+  },
+  {
+    title: "TRW",
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    image: "./trw.png",
+    link: "https://trw-website.herokuapp.com/",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Image Search App",
+    subtitle: "React",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reedbarger.com",
+    image: "./imagesearch.png",
+    link: "https://image-search-tazimmadre.vercel.app/",
   },
   {
-    title: "DevChat",
+    title: "Super Chat App",
     subtitle: "React and Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://jsbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://pythonbootcamp.com",
+    image: "./chat.png",
+    link: "https://superchat-22eaa.firebaseapp.com/",
   },
 ];
 export const skills=[
