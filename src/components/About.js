@@ -33,25 +33,49 @@ export default function About() {
           <img
             className="object-cover object-center h-2/6 w-6/12 my-image"
             alt="hero"
-            
-            src="/tazim.jpg  "
+            src="/assets/tazim.jpg  "
           />
         </div>
       </div>
       <div className="shapes">
-        <img width={"70px"} height={"62px"} src="/circle.png" alt="circle" />
+        <img
+          width={"70px"}
+          height={"62px"}
+          src="/assets/circle.png"
+          alt="circle"
+        />
       </div>
       <div className="shapes1">
-        <img width={"110px"} height={"110px"} src="/circle.png" alt="circle" />
+        <img
+          width={"110px"}
+          height={"110px"}
+          src="/assets/circle.png"
+          alt="circle"
+        />
       </div>
       <div className="shapes2">
-        <img width={"20px"} height={"32px"} src="/circle.png" alt="circle" />
+        <img
+          width={"20px"}
+          height={"32px"}
+          src="/assets/circle.png"
+          alt="circle"
+        />
       </div>
       <div className="shapes3">
-        <img width={"90px"} height={"32px"} src="/circle.png" alt="circle" />
+        <img
+          width={"90px"}
+          height={"32px"}
+          src="/assets/circle.png"
+          alt="circle"
+        />
       </div>
       <div className="shapes4">
-        <img width={"40px"} height={"30px"} src="/circle.png" alt="circle" />
+        <img
+          width={"40px"}
+          height={"30px"}
+          src="/assets/circle.png"
+          alt="circle"
+        />
       </div>
     </section>
   );

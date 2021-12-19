@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "React",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/youtube.png",
+    image: "/assets/youtube.png",
     link: "https://videos-gray-ten.vercel.app/",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./trw.png",
+    image: "/assets/trw.png",
     link: "https://trw-website.herokuapp.com/",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "React",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./imagesearch.png",
+    image: "/assets/imagesearch.png",
     link: "https://image-search-tazimmadre.vercel.app/",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "React and Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./chat.png",
+    image: "/assets/chat.png",
     link: "https://superchat-22eaa.firebaseapp.com/",
   },
 ];
