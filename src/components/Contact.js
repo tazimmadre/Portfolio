@@ -40,26 +40,27 @@ export default function Contact() {
             src="https://www.google.com/maps/embed/v1/place?q=Gulmohar+Apartment+Ratnagiri&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
+            <div className="lg:w-1/3 px-5">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
               <p className="mt-1 text-white">
-                Shivaji Nagar<br />
-                Ratnagiri, IN 415612 
+                Shivaji Nagar
+                <br />
+                Ratnagiri, IN 415612
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mt-5 lg:mt-2">
+            <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
-              </h2> 
+              </h2>
               <p className="text-indigo-400 leading-relaxed">
                 tazimmadre5041@email.com
               </p>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">8080170465</p>
+              <p className="leading-relaxed text-indigo-400">8080170465</p>
             </div>
           </div>
         </div>
@@ -73,8 +74,9 @@ export default function Contact() {
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+            I’m interested in opportunities – especially ambitious or
+            large projects. However, if you have other request or question,
+            don’t hesitate to use the form.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">

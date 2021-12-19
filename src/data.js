@@ -33,5 +33,5 @@ export const projects = [
   },
 ];
 export const skills=[
-  "ReactJS","AngularJs","NodeJS","MongoDB"
+  "ReactJS","AngularJS","NodeJS","MongoDB","ExpressJS","HTML","CSS","BOOTSTRAP"
 ];
