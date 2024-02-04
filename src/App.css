@@ -1,49 +1,73 @@
 .skills {
-  animation: floating 3s ease-in-out infinite alternate;
+    animation: floating 3s ease-in-out infinite alternate;
 }
 
 @keyframes floating {
-0% {transform: translate(0);}
-65% {transform: translateY(10px);}
-100% {transform: translate(0);}
+    0% {
+        transform: translate(0);
+    }
+    65% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
-.shapes,.shapes1,.shapes2,.shapes3,.shapes4{   
+.shapes,
+.shapes1,
+.shapes2,
+.shapes3,
+.shapes4 {
     opacity: 20%;
     z-index: -1;
     position: absolute;
 }
-.shapes{
+.shapes {
     animation: shapes 16s linear infinite alternate-reverse;
     top: 10%;
     left: 50%;
 }
-.shapes1{
+.shapes1 {
     animation: shapes 30s ease-in infinite reverse;
     bottom: 60%;
     right: 20%;
 }
-.shapes2{
+.shapes2 {
     animation: shapes 4s ease-in infinite forwards;
     left: 20%;
     opacity: 70%;
 }
-.shapes3{
+.shapes3 {
     animation: shapes 3s ease-in-out infinite alternate-reverse;
     bottom: 50%;
     left: 10%;
 }
-.shapes4{
+.shapes4 {
     animation: shapes 6s ease-out infinite reverse;
     right: 20%;
     bottom: 30%;
 }
 @keyframes shapes {
-    0%{transform: rotate(0deg) translate(-165px) rotate(0deg);}
-    100%{transform: rotate(1turn) translate(-165px) rotate(-1turn);}
+    0% {
+        transform: rotate(0deg) translate(-165px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn) translate(-165px) rotate(-1turn);
+    }
 }
 
-
-.my-image{
+.my-image {
     border-radius: 50%;
     clip-path: circle();
+}
+
+.hero-font {
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-description{
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+
 }
