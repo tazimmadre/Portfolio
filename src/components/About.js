@@ -57,7 +57,7 @@ export default function About () {
           <img
             className="object-cover object-center h-2/6 w-6/12 my-image rounded-md shadow-md hover:shadow-lg transition-shadow"
             alt="Tazim Madre - Software Developer"
-            src="/assets/portfolioimage.jpeg"
+            src="assets/portfolioimage.jpeg"
           />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function About () {
         <img
           width={"70px"}
           height={"62px"}
-          src="/assets/circle.png"
+          src="assets/circle.png"
           alt="circle"
         />
       </div>
@@ -73,7 +73,7 @@ export default function About () {
         <img
           width={"110px"}
           height={"110px"}
-          src="/assets/circle.png"
+          src="assets/circle.png"
           alt="circle"
         />
       </div>
@@ -81,7 +81,7 @@ export default function About () {
         <img
           width={"20px"}
           height={"32px"}
-          src="/assets/circle.png"
+          src="assets/circle.png"
           alt="circle"
         />
       </div>
@@ -89,7 +89,7 @@ export default function About () {
         <img
           width={"90px"}
           height={"32px"}
-          src="/assets/circle.png"
+          src="assets/circle.png"
           alt="circle"
         />
       </div>
@@ -97,7 +97,7 @@ export default function About () {
         <img
           width={"40px"}
           height={"30px"}
-          src="/assets/circle.png"
+          src="assets/circle.png"
           alt="circle"
         />
       </div>

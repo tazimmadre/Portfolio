@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "React",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/youtube.png",
+    image: "assets/youtube.png",
     link: "https://videos-gray-ten.vercel.app/",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/trw.png",
+    image: "assets/trw.png",
     link: "https://trw-website.herokuapp.com/",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "React",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/imagesearch.png",
+    image: "assets/imagesearch.png",
     link: "https://image-search-tazimmadre.vercel.app/",
   },
   {
@@ -28,10 +28,26 @@ export const projects = [
     subtitle: "React and Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/chat.png",
+    image: "assets/chat.png",
     link: "https://superchat-22eaa.firebaseapp.com/",
+  },
+  {
+    title: "Produce",
+    subtitle: "NextJS",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "assets/produce.png",
+    link: "https://puertoricoproduce.com/",
+  },
+  {
+    title: "Playmas",
+    subtitle: "Vuejs",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "assets/playmas.png",
+    link: "https://www.playmas.app/",
   },
 ];
 export const skills=[
-  "ReactJS","NodeJS","MongoDB","ExpressJS","VueJS","NextJS","MySQL","ParseJS","React Native","Strapi","AWS EC2","AWS SES","Rest API's","Linux","","Redis","HTML","CSS","SASS",
+  "ReactJS","NodeJS","MongoDB","ExpressJS","VueJS","NextJS","MySQL","ParseJS","React Native","Strapi","AWS EC2","AWS SES","Rest API's","Linux","Redis","HTML","CSS","SASS",
 ];
