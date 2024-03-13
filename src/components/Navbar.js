@@ -1,39 +1,21 @@
-import { ArrowDownIcon } from "@heroicons/react/solid";
 import React from "react";
 import {Link} from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10 ">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
-        <p className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-xl">
-            Tazim Madre
-          </a>
-        </p>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 text-white animate-pulse">
-            Past Work
-          </a>
-          <a href="#skills" className="mr-5 text-white animate-pulse">
-            Skills
-          </a>
-          <a href="#testimonials" className="mr-5 text-white animate-pulse">
-            Testimonials
-          </a>
-        </nav>
-        <Link to="/blog" 
-          className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
-        >
-          Blog</Link>
-        <a
-          href="#contact"
-          className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
-        >
-          Hire Me
-          <ArrowDownIcon className="w-4 h-4 ml-1" />
-        </a>
-      </div>
-    </header>
+  //lets redesign the navbar using tailwindcss classes to make it look better
+  <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono" role="navigation">
+    <Link to="/" className="pl-8">Tazim Madre</Link>
+    <div className="px-4 cursor-pointer md:hidden">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </div>
+    <div className="pr-8 md:block hidden">
+      <Link to="/blog" className="p-4">Blog</Link>
+      {/* <Link to="/projects" className="p-4">Projects</Link>
+      <Link to="/contact" className="p-4">Contact</Link> */}
+    </div>
+  </nav>
   );
 }

@@ -4,30 +4,26 @@ import { skills } from "../data";
 import "../App.css";
 export default function Skills() {
   return (
-    <div id="skills" >
-      <div className="container px-5 py-10 mx-auto ">
-        <div className="text-center mb-20">
-          <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
-            Skills &amp; Technologies
-          </h1>
-          {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Technologies that I use.
-          </p> */}
+    // lets redesign the skills section using tailwindcss classes to make it look better
+    <section id="skills" className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <ChipIcon className="mx-auto inline-block w-10 mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-gray-900">Skills</h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Here are some of the skills I have.</p>
         </div>
-        <div className="flex flex-wrap sm:mx-auto sm:mb-2 -mx-2 ">
+        <div className="flex flex-wrap -m-4">
           {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/4 w-full skills">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
+            <div key={skill} className="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <BadgeCheckIcon className="text-indigo-500 w-12 h-12 mb-3 inline-block" />
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-4">{skill}</h2>
+                <p className="leading-relaxed text-base"></p>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
