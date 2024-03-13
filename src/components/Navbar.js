@@ -1,5 +1,6 @@
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -21,6 +22,10 @@ export default function Navbar() {
             Testimonials
           </a>
         </nav>
+        <Link to="/blog" 
+          className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+        >
+          Blog</Link>
         <a
           href="#contact"
           className="inline-flex items-center text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"

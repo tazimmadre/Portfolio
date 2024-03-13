@@ -1,20 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-// import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import About from './components/About';
+import Router from './router';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
     <div >
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      {/* <Testimonials /> */}
-      <Contact />
+    <Router/>
     </div>
   );
 }
