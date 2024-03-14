@@ -4,12 +4,14 @@ import NotFound from '../components/Notfound';
 import Home from '../pages/home';
 import BlogPage from '../pages/blog';
 import BlogDetails from '../pages/blog/blogDetails';
+import DomainNameSearch from '../pages/DomainNameSearch';
 
 const AppRouter = () => {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home/>} />
+        <Route path="/domain-name-search" element={<DomainNameSearch/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/blog/:id" element={<BlogDetails/>} />
         <Route path="*" element={<NotFound/>} />
