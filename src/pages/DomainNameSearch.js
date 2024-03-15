@@ -17,7 +17,7 @@ const DomainNameSearch = () => {
     try {
       setLoading(true);
       // const response = await axios.get(`https://api.domainsdb.info/v1/domains/search?domain=${query}&zone=com`);
-      const response = await axios.get(`https://www.bigrock.in/domain-search.php?domain_names[]=${query}&action=too-without-spin`);
+      const response = await axios.get(`https://www.bigrock.in/domain-search.php?domain_names[]=${query}&action=too-with-spin`);
       setDomainNames(Object.keys(response?.data?.data));
       console.log(Object.keys(response?.data?.data));
       setLoading(false);
