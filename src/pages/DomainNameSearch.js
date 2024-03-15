@@ -12,16 +12,16 @@ const DomainNameSearch = () => {
   const [domainNames, setDomainNames] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const fetchDomainNames = async () => {
-    // fetch domain names use axxios
+  const fetchDomainNames = async (e) => {
+    e.preventDefault();
     try {
       setLoading(true);
-      const response = await axios.get(`https://api.domainsdb.info/v1/domains/search?domain=${query}&zone=com`);
-      console.log(response);
-      setDomainNames(response.data.domains);
+      // const response = await axios.get(`https://api.domainsdb.info/v1/domains/search?domain=${query}&zone=com`);
+      const response = await axios.get(`https://www.bigrock.in/domain-search.php?domain_names[]=${query}&action=too-without-spin`);
+      setDomainNames(Object.keys(response?.data?.data));
+      console.log(Object.keys(response?.data?.data));
       setLoading(false);
     } catch (error) {
-      console.error(error);
       setLoading(false);
     } finally {
       setLoading(false);
@@ -30,7 +30,7 @@ const DomainNameSearch = () => {
 
   return (
     <div className="mx-auto">
-    <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono" role="navigation">
+      <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono" role="navigation">
         <Link to="/" className="pl-8">Tazim Madre / Domain Name Search</Link>
         <div className="px-4 cursor-pointer md:hidden">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -41,23 +41,28 @@ const DomainNameSearch = () => {
           <Link to="/" className="p-4">Portfolio</Link>
         </div>
       </nav>
-        <div className="container mx-auto">
-
-      <h1 className="text-3xl my-7">Domain Name Search</h1>
-      <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} className="border-2 border-gray-300 rounded p-2 w-3/4" />
-      <button onClick={fetchDomainNames} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Search</button>
-      {loading ? 
-      <div className="text-center my-4">
-        <div className="loader">Loading...</div>
+      <div className="container flex justify-center">
+        <form className="w-1/2" onSubmit={fetchDomainNames}>
+          <h1 className="text-3xl my-7">Domain Name Search</h1>
+          <input type="text" value={query} onChange={(e) => setQuery(e.target.value)} className="border-2 border-gray-300 rounded p-2 w-3/4" />
+          <button type='submit' onClick={fetchDomainNames} className="ml-1 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Search</button>
+        </form>
       </div>
-      :
-      <ul>
-        {domainNames.map((domainName) => (
-          <li key={domainName} className="my-2">{domainName}</li>
-          ))}
-      </ul>
+      <div className='container flex justify-center'>
+        {loading ?
+          <div className="text-center my-4 w-1/2">
+            <div className="loader">Loading...</div>
+          </div>
+          :
+          <div className='w-1/2 mt-2'>
+          <ul>
+            {domainNames.map((domainName) => (
+              <li key={domainName} className="my-2">{domainName}</li>
+            ))}
+          </ul>
+          </div>
         }
-    </div>
+        </div>
     </div>
   );
 }
