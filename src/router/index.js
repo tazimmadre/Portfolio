@@ -10,13 +10,13 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route path="/domain-name-search" element={<DomainNameSearch/>} />
-        <Route path="/blog" element={<BlogPage/>} />
-        <Route path="/blog/:id" element={<BlogDetails/>} />
-        <Route path="*" element={<NotFound/>} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/domain-name-search" element={<DomainNameSearch />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      </Router>
+    </Router>
   );
 };
 
