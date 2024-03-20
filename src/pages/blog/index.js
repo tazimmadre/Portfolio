@@ -4,11 +4,15 @@ import moment from 'moment';
 
 const BlogPage = () => {
   const [blogs, setBlogs] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
-    fetch('https://amused-nightgown-cod.cyclic.app/news?page=1&limit=10')
+    fetch('https://amused-nightgown-cod.cyclic.app/news?page=1&limit=100')
       // fetch('http://localhost:3001/news?page=1&limit=10')
       .then((res) => res.json())
-      .then((data) => setBlogs(data));
+      .then((data) => {
+        setBlogs(data);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -27,9 +31,9 @@ const BlogPage = () => {
         </div>
       </nav>
       <div className=" container">
-        {/* <h1 className="text-5xl mt-2 font-bold">Blog</h1> */}
+        <h1 className="text-5xl mt-2 font-bold">Top 100 Blogs</h1>
         <div className="mt-10">
-          {blogs.map((blog) => (
+          {loading ? 'Loading....' : blogs.map((blog) => (
             <div key={blog._id} className="border-b-2 border-gray-200 p-4">
               <h2 className="text-2xl font-bold">{blog.title}</h2>
               <p className="text-gray-500 text-sm">
