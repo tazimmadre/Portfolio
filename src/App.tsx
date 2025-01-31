@@ -10,7 +10,7 @@ function App() {
       title: "E-Auction Dekho",
       subtitle: "Nuxt and strapi",
       description: "Online auction platform built with Nuxt.js and Strapi, featuring real-time bidding and auctions.",
-      images: ["../assets/auction.png"],
+      images: ["/auction.png"],
       tags: ["Nuxt.js", "Strapi", "Real-time"],
       link: "https://www.eauctiondekho.com/",
       level: "Advanced"
@@ -19,7 +19,7 @@ function App() {
       title: "Delivery App",
       subtitle: "NextJS",
       description: "Delivery application built with Next.js, featuring real-time tracking and order management.",
-      images: ["../assets/pideuva.png"],
+      images: ["/pideuva.png"],
       tags: ["Next.js", "Real-time", "Delivery"],
       link: "https://www.pideuva.com/",
       level: "Advanced"
@@ -28,7 +28,7 @@ function App() {
       title: "Produce",
       subtitle: "NextJS",
       description: "E-commerce platform for produce built with Next.js, featuring server-side rendering and dynamic routing.",
-      images: ["../assets/produce.png"],
+      images: ["/produce.png"],
       tags: ["Next.js", "SSR", "E-commerce"],
       link: "https://puertoricoproduce.com/",
       level: "Intermediate"
@@ -37,7 +37,7 @@ function App() {
       title: "Playmas",
       subtitle: "Vuejs",
       description: "Interactive web application built with Vue.js, showcasing modern UI/UX design principles.",
-      images: ["../assets/playmas.png"],
+      images: ["/playmas.png"],
       tags: ["Vue.js", "UI/UX", "SPA"],
       link: "https://www.playmas.app/",
       level: "Intermediate"
@@ -46,7 +46,7 @@ function App() {
       title: "Train Running Status",
       subtitle: "React",
       description: "Train running status application built with React, featuring real-time tracking and status updates.",
-      images: ["../assets/train.png"],
+      images: ["/train.png"],
       tags: ["React", "API Integration", "Real-time"],
       link: "https://train-status-app-tazimmadres-projects.vercel.app/train-status/12052?date=08+Jan+2025",
       level: "Intermediate",
@@ -55,7 +55,7 @@ function App() {
       title: "Youtube Lite App",
       subtitle: "React",
       description: "A lightweight YouTube clone built with React, featuring video playback, search, and recommendations.",
-      images: ["../assets/youtube.png"],
+      images: ["/youtube.png"],
       tags: ["React", "YouTube API", "Tailwind CSS"],
       link: "https://videos-gray-ten.vercel.app/",
       level: "Beginner"
@@ -64,7 +64,7 @@ function App() {
     //   title: "TRW",
     //   subtitle: "MERN Stack",
     //   description: "A full-stack web application built with the MERN stack (MongoDB, Express.js, React, Node.js).",
-    //   images: ["../assets/trw.png"],
+    //   images: ["/trw.png"],
     //   tags: ["MongoDB", "Express.js", "React", "Node.js"],
     //   link: null,
     //   level: "Intermediate"
@@ -73,7 +73,7 @@ function App() {
       title: "Super Chat App",
       subtitle: "React and Firebase",
       description: "Real-time chat application built with React and Firebase, featuring instant messaging and authentication.",
-      images: ["../assets/chat.png"],
+      images: ["/chat.png"],
       tags: ["React", "Firebase", "Real-time"],
       link: "https://superchat-22eaa.firebaseapp.com/",
       level: "Beginner"
@@ -82,7 +82,7 @@ function App() {
       title: "RC Details",
       subtitle: "Nextjs",
       description: "Vehicle registration details application built with Next.js",
-      images: ["../assets/rcdetails1.png", "../assets/rcdetails.png"],
+      images: ["/rcdetails1.png", "/rcdetails.png"],
       tags: ["Next.js", "API Integration"],
       link: null,
       level: "Beginner"
