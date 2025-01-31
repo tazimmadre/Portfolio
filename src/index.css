@@ -1,20 +1,19 @@
-body {
-  margin: 0;
-  font-family: monospace !important;
-  font-weight: 400 !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-gray-900;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-a {
-  text-decoration: none !important;
-  color: black !important;
-}
-a:hover {
-  text-decoration: none !important;
-  color: rgb(159, 154, 154) !important;
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }
