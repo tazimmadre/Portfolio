@@ -191,6 +191,18 @@ function App() {
           </div>
         </section>
 
+        {/* Projects Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} project={project} index={index} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Skills Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -203,28 +215,18 @@ function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center"
+                  className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
                 >
-                  <div className="text-gray-800 mb-2">{skill.icon}</div>
-                  <h3 className="text-lg font-semibold text-center mb-2">{skill.category}</h3>
-                  <ul className="space-y-1 text-center text-sm">
+                  <div className="text-gray-800">{skill.icon}</div>
+                  <h3 className="text-xl font-semibold text-center mb-2">{skill.category}</h3>
+                  <ul className="space-y-2 text-center text-sm">
                     {skill.technologies.map((tech, techIndex) => (
-                      <li key={techIndex} className="text-gray-600">{tech}</li>
+                      <li key={techIndex} className="text-gray-700 bg-gray-100 px-2 py-1 rounded-md shadow-sm">
+                        {tech}
+                      </li>
                     ))}
                   </ul>
                 </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Projects Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12">Featured Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {projects.map((project, index) => (
-                <ProjectCard key={index} project={project} index={index} />
               ))}
             </div>
           </div>
